@@ -425,9 +425,10 @@ class Markdown {
             return $text;
 
         $less_than_tab = $this->tab_width - 1;
-        $block_tags_a_re = 'ins|del';
+        $block_tags_a_re = 'ins|del|audio|video';
         $block_tags_b_re = 'p|div|h[1-6]|blockquote|pre|table|dl|ol|ul|address|'.
-                           'script|noscript|form|fieldset|iframe|math';
+                           'script|noscript|form|fieldset|iframe|math|article|aside|details'.
+                           '|figcaption|figure|footer|header|hgroup|menu|nav|section|summary';
 
         // Regular expression for the content of a block tag.
         $nested_tags_level = 4;
