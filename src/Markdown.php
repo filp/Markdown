@@ -24,7 +24,7 @@
  * @author John Gruber <http://daringfireball.net/projects/markdown/>
  * @author Filipe Dobreira <dobreira@gmail.com>
  * @author Justin J. Novack <jnovack@gmail.com>
- * @version 1.0.1o
+ * @version 1.0.15
  */
 class Markdown {
 
