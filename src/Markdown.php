@@ -23,7 +23,8 @@
  * @author Michel Fortin <http://michelf.com/projects/php-markdown/>
  * @author John Gruber <http://daringfireball.net/projects/markdown/>
  * @author Filipe Dobreira <dobreira@gmail.com>
- * @version 1.0.1n (original)
+ * @author Justin J. Novack <jnovack@gmail.com>
+ * @version 1.0.1o
  */
 class Markdown {
 
@@ -167,7 +168,7 @@ class Markdown {
      * @var array
      */
     protected $em_relist = array(
-        ''  => '(?:(?<!\*)\*(?!\*)|(?<!_)_(?!_))(?=\S|$)(?![.,:;]\s)',
+        ''  => '(?:(?<!\*)\*(?!\*)|(?<!_)_(?!_))(?=\S|$)(?![\.,:;]\s)',
         '*' => '(?<=\S|^)(?<!\*)\*(?!\*)',
         '_' => '(?<=\S|^)(?<!_)_(?!_)',
         );
@@ -177,7 +178,7 @@ class Markdown {
      * @var array
      */
     protected $strong_relist = array(
-        ''   => '(?:(?<!\*)\*\*(?!\*)|(?<!_)__(?!_))(?=\S|$)(?![.,:;]\s)',
+        ''   => '(?:(?<!\*)\*\*(?!\*)|(?<!_)__(?!_))(?=\S|$)(?![\.,:;]\s)',
         '**' => '(?<=\S|^)(?<!\*)\*\*(?!\*)',
         '__' => '(?<=\S|^)(?<!_)__(?!_)',
         );
@@ -187,7 +188,7 @@ class Markdown {
      * @var array
      */
     protected $em_strong_relist = array(
-        ''    => '(?:(?<!\*)\*\*\*(?!\*)|(?<!_)___(?!_))(?=\S|$)(?![.,:;]\s)',
+        ''    => '(?:(?<!\*)\*\*\*(?!\*)|(?<!_)___(?!_))(?=\S|$)(?![\.,:;]\s)',
         '***' => '(?<=\S|^)(?<!\*)\*\*\*(?!\*)',
         '___' => '(?<=\S|^)(?<!_)___(?!_)',
         );
@@ -1061,7 +1062,7 @@ class Markdown {
 
         // Re-usable patterns to match list item bullets and number markers:
         $marker_ul_re  = '[*+-]';
-        $marker_ol_re  = '\d+[.]';
+        $marker_ol_re  = '\d+[\.]';
         $marker_any_re = "(?:$marker_ul_re|$marker_ol_re)";
 
         $markers_relist = array(
@@ -1132,7 +1133,7 @@ class Markdown {
     {
         // Re-usable patterns to match list item bullets and number markers:
         $marker_ul_re  = '[*+-]';
-        $marker_ol_re  = '\d+[.]';
+        $marker_ol_re  = '\d+[\.]';
         $marker_any_re = "(?:$marker_ul_re|$marker_ol_re)";
 
         $list = $matches[1];
