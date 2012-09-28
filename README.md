@@ -6,6 +6,7 @@
 2. Removed global functions that were in place for platform-specific integration. I'll leave that up to the developer.
 3. Improved (*subjective, yes*) code formatting.
 4. Replaced some/most PHP4-style constructs and routines with modern PHP5.3+ equivalents. (e.g: closures instead of the archaic `create_function`).
+5. Implimented most HTML5 elements.
 
 ##License:##
 Markdown.php is free software, available under the terms of the GNU General Public License version 3 or a later version. If you like this software and want to say thanks, you can contribute by making a donation @ [michelf.com](http://michelf.com/projects/php-markdown).
