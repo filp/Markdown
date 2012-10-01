@@ -25,7 +25,7 @@
  * @package  Markdown
  * @author   Michel Fortin <michel.fortin@michelf.ca>
  * @author   John Gruber <http://daringfireball.net/projects/markdown/>
- * @author   Filipe Dobreira <dobreira@gmail.com>
+ * @author   Filipe Dobreira <fil@ssh.pt>
  * @author   Justin J. Novack <jnovack@gmail.com>
  * @license  http://www.gnu.org/licenses/gpl-3.0.html GPLv3
  * @link     http://github.com/filp/Markdown
